@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Andika Bramastra - IT Student & Web Developer Portfolio. Specializing in IoT, Web Development, and AI/ML Integration.">
+    <meta name="theme-color" content="#00ff41">
+    
+    <!-- Mobile Optimization -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <title>Andika Bramastra - Tech Portfolio</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div id="loading-text">INITIALIZING SYSTEM...</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Background Effects -->
+    <canvas id="matrix-canvas"></canvas>
+    <div id="canvas-container"></div>
+    <div class="cursor"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Bram's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="terminal-prompt">whoami</div>
+            <h1>
+                <span class="cyber-text" data-text="IT">IT</span>
+                <span class="cyber-text" data-text="ENTHUSIAST">ENTHUSIAST</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">An IT student with a strong enthusiasm for information technology.</span>
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <div class="stat-number">TECH</div>
+                    <div class="stat-label">ENTHUSIAST</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">IT</div>
+                    <div class="stat-label">STUDENT & DEVELOPER</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">CODE</div>
+                    <div class="stat-label">LEARNER</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">TECH</div>
+                    <div class="stat-label">IN PROGRESS</div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#projects" class="btn">VIEW PROJECTS</a>
+                <a href="#contact" class="btn btn-secondary">HIRE ME</a>
+                <a href="files/CV - Bramastra (Eng).pdf" download="CV - Bramastra (Eng).pdf" class="btn btn-cv">
+                    <span class="btn-icon"></span> DOWNLOAD CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header reveal">
+            <div class="section-number">01 SYSTEM.INFO</div>
+            <h2 class="section-title">ABOUT_ME</h2>
+            <p class="section-description">
+                IT student with a strong interest in IoT, web development, and data analysis. 
+                Experienced in hands-on projects, front-end development, and real-world problem solving. 
+                Passionate about learning, building digital solutions, and growing as a technology professional.
+            </p>
+        </div>
+        
+        <div class="code-window reveal">
+            <div class="window-header">
+                <div class="window-dot"></div>
+                <div class="window-dot"></div>
+                <div class="window-dot"></div>
+            </div>
+            <pre style="color: var(--text-muted); margin: 0;">
+<span style="color: var(--text-secondary)">const</span> <span style="color: var(--text-primary)">developer</span> = {
+    <span style="color: var(--text-secondary)">name:</span> <span style="color: var(--accent-tertiary)">"Andika Bramastra"</span>,
+    <span style="color: var(--text-secondary)">location:</span> <span style="color: var(--accent-tertiary)">"Bali, Indonesia"</span>,
+    <span style="color: var(--text-secondary)">role:</span> <span style="color: var(--accent-tertiary)">"IT Support, Web Developer, and all things related to IT and technology."</span>,
+    <span style="color: var(--text-secondary)">passion:</span> <span style="color: var(--accent-tertiary)">"I am passionate about information technology, particularly in IT support and web development, and I continuously strive to learn and adapt to new technologies."</span>,
+    <span style="color: var(--text-secondary)">expertise:</span> [
+        <span style="color: var(--accent-tertiary)">"AI Web Development"</span>,
+        <span style="color: var(--accent-tertiary)">"AI Engineering"</span>,
+        <span style="color: var(--accent-tertiary)">"AI and Machine Learning"</span>,
+        <span style="color: var(--accent-tertiary)">"Internet of Things (IoT)"</span>,
+        <span style="color: var(--accent-tertiary)">"Front-End Development"</span>,
+        <span style="color: var(--accent-tertiary)">"Back-End Development"</span>,
+        <span style="color: var(--accent-tertiary)">"Database (MySQL)"</span>,
+        <span style="color: var(--accent-tertiary)">"Data Analysis"</span>,
+        <span style="color: var(--accent-tertiary)">"Microsoft Office"</span>,
+        <span style="color: var(--accent-tertiary)">"HTML"</span>,
+        <span style="color: var(--accent-tertiary)">"CSS"</span>,
+        <span style="color: var(--accent-tertiary)">"JavaScript"</span>
+    ],
+    <span style="color: var(--text-secondary)">currentFocus:</span> <span style="color: var(--accent-tertiary)">"AI/ML Integration & Microservices"</span>
+};</pre>
+        </div>
+
+        <div class="reveal" style="margin-top: 3rem;">
+            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.9; max-width: 900px;">
+                As an IT student, I focus on building practical solutions through web development and IoT projects. 
+                I enjoy turning ideas into functional systems using modern web technologies, while continuously learning and improving my technical skills. 
+                I value clean code, problem-solving, and real-world implementation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <div class="section-number">02 CORE.CAPABILITIES</div>
+            <h2 class="section-title">TECH_STACK</h2>
+            <p class="section-description">
+                Mastery in cutting-edge technologies and frameworks for building modern applications.
+            </p>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-card reveal">
+                <div class="tech-icon">⚡</div>
+                <h3>FRONTEND</h3>
+                <p>Building responsive, high performance user interfaces with modern frameworks and AI-assisted best practices.</p>
+                <div class="tech-skills">
+                    <span class="skill-chip">React.js</span>
+                    <span class="skill-chip">JavaScript</span>
+                    <span class="skill-chip">Three.js</span>
+                    <span class="skill-chip">CSS</span>
+                    <span class="skill-chip">HTML</span>
+                    <span class="skill-chip">Next.js</span>
+                </div>
+            </div>
+
+            <div class="tech-card reveal">
+                <div class="tech-icon">🔧</div>
+                <h3>BACKEND</h3>
+                <p>Architecting scalable server-side applications with robust APIs and database management.</p>
+                <div class="tech-skills">
+                    <span class="skill-chip">Node.js</span>
+                    <span class="skill-chip">Python</span>
+                    <span class="skill-chip">PHP</span>
+                </div>
+            </div>
+
+            <div class="tech-card reveal">
+                <div class="tech-icon">💾</div>
+                <h3>DATABASE</h3>
+                <p>Implementing cloud infrastructure and automated deployment pipelines for continuous delivery.</p>
+                <div class="tech-skills">
+                    <span class="skill-chip">MySQL</span>
+                    <span class="skill-chip">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="tech-card reveal">
+                <div class="tech-icon">🤖</div>
+                <h3>AI</h3>
+                <p>Integrating artificial intelligence and machine learning models into production applications.</p>
+                <div class="tech-skills">
+                    <span class="skill-chip">TensorFlow</span>
+                    <span class="skill-chip">Claude AI</span>
+                    <span class="skill-chip">OpenAI API</span>
+                </div>
+            </div>
+
+            <div class="tech-card reveal">
+                <div class="tech-icon">📱</div>
+                <h3>MOBILE</h3>
+                <p>Creating cross-platform mobile applications with native performance and seamless UX.</p>
+                <div class="tech-skills">
+                    <span class="skill-chip">iOS</span>
+                    <span class="skill-chip">Android Studio</span>
+                </div>
+            </div>
+
+            <div class="tech-card reveal">
+                <div class="tech-icon">🔐</div>
+                <h3>SECURITY</h3>
+                <p>Implementing comprehensive security measures and best practices for data protection.</p>
+                <div class="tech-skills">
+                    <span class="skill-chip">OAuth</span>
+                    <span class="skill-chip">Encryption</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <div class="section-number">03 SHOWCASE.PROJECTS</div>
+            <h2 class="section-title">PORTFOLIO</h2>
+            <p class="section-description">
+                Featured projects demonstrating expertise across various technologies and industries.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="images/project iot.jpeg" alt="IoT Alcohol Detection System">
+                </div>
+                <div class="project-content">
+                    <div class="project-label">IOT PROJECT</div>
+                    <h3>IOT SYSTEM ALCOHOL DETECTION FROM BREATH USING MQ-3 SENSORS AND ESP32</h3>
+                    <p>
+                        A real-time alcohol detection system based on breath analysis, utilizing the MQ-3 sensor and ESP32 microcontroller. 
+                        The system accurately measures alcohol concentration from exhaled breath, processes the data, and transmits it wirelessly to a web-based platform. 
+                        Measurement results are displayed in real time through an interactive website, enabling remote monitoring, data logging, and analysis for safety and control purposes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">ESP32</span>
+                        <span class="project-tag">BUZZER</span>
+                        <span class="project-tag">MQ-3</span>
+                        <span class="project-tag">OLED I2C</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="images/recell.jpeg" alt="Recell Bram Business">
+                </div>
+                <div class="project-content">
+                    <div class="project-label">BUSINESS</div>
+                    <h3>RECELL BRAM</h3>
+                    <p>
+                        Recell Bram is a startup business founded from zero, offering reliable second-hand gadgets with the best quality at budget-friendly prices.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="images/affiliate.jpeg" alt="TikTok Affiliate Marketing">
+                </div>
+                <div class="project-content">
+                    <div class="project-label">AFFILIATE</div>
+                    <h3>TIKTOK AFFILIATE</h3>
+                    <p>
+                        This project is a personal initiative that I have been actively running for almost one year as a side venture to generate additional income. 
+                        Throughout its development, the project has allowed me to improve my practical skills, gain real-world experience, and manage various aspects independently, from planning and execution to daily operations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="images/website.jpeg" alt="IoT Monitoring Website">
+                </div>
+                <div class="project-content">
+                    <div class="project-label">WEBSITE PROJECT FOR IOT</div>
+                    <h3>WEBSITE FOR IOT SYSTEM ALCOHOL DETECTION</h3>
+                    <p>
+                        This website functions as a real-time monitoring platform for an IoT-based Alcohol Detection system. Data collected from the device is automatically stored in a database and displayed instantly on the website. 
+                        The Value represents the measured alcohol concentration, while the Level indicates the alcohol consumption category, including alcohol-free, low, moderate, high, and very high.
+                        The Status shows whether the condition is safe or alcohol is detected, and the Time field records the exact date and time of each measurement for monitoring and data tracking purposes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">XAMPP</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">DATABASE</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">PHP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="images/website-porto.jpeg" alt="AI-Powered Portfolio Website">
+                </div>
+                <div class="project-content">
+                    <div class="project-label">WEBSITE PROJECT FOR PORTFOLIO</div>
+                    <h3>AI-POWERED PORTFOLIO WEBSITE</h3>
+                    <p>
+                        Designed as a comprehensive showcase of my professional journey, this website was built using a high-detail approach powered by Artificial Intelligence. 
+                        My goal was to push the boundaries of a traditional portfolio by integrating AI-assisted design and optimization. 
+                        The result is a curated, pixel-perfect digital space where technology meets intentionality, ensuring that every project and skill is presented with absolute clarity and depth.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="images/dpmd.jpeg" alt="Government Website Prototype">
+                </div>
+                <div class="project-content">
+                    <div class="project-label">WEBSITE PROJECT FOR GOVERNMENT</div>
+                    <h3>PROTOTYPE WEBSITE FOR DPMD GIANYAR</h3>
+                    <p>
+                        This website was created as a prototype for the DPMD Gianyar (Department of Community and Village Empowerment of Gianyar Regency). 
+                        It was developed as part of my 6-month MBKM internship program, during which I served as a Front-End Developer and contributed to the development of responsive and user-friendly interfaces.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header reveal">
+            <div class="section-number">04 CAREER.TIMELINE</div>
+            <h2 class="section-title">EXPERIENCE</h2>
+            <p class="section-description">
+                Professional journey through leading tech companies and innovative startups.
+            </p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2023</div>
+                    <h3>IoT Project – Temperature & Humidity Monitoring</h3>
+                    <p class="timeline-description">
+                        This project is an IoT-based monitoring system designed to track ambient temperature and humidity levels in real-time. 
+                        Built around the ESP32 microcontroller, the system provides a dual-layer interface: a comprehensive visual dashboard via Blynk IoT and instant emergency notifications through a Telegram Bot. 
+                        To enhance functionality, the system includes a tilt sensor for physical tamper detection and a buzzer for localized audible alarms.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">ESP32</span>
+                        <span class="project-tag">DHT11</span>
+                        <span class="project-tag">KY-020 TILT SWITCH</span>
+                        <span class="project-tag">ACTIVE BUZZER</span>
+                        <span class="project-tag">BLYNK IOT</span>
+                        <span class="project-tag">TELEGRAM BOT API</span>
+                    </div>
+                </div>
+                <div class="timeline-empty"></div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024</div>
+                    <h3>Barista</h3>
+                    <div class="timeline-company">Rooftop Denpasar</div>
+                    <p class="timeline-description">
+                        While taking a break from my university studies, I decided to dive into the vibrant coffee scene in Denpasar. 
+                        For the past three months, I've been working as a Barista at Rooftop Denpasar. 
+                        It's been an incredible experience learning the art of brewing while engaging with the diverse crowd of Bali. 
+                        Turning my 'day off' into a productive journey of skill-building and networking.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024</div>
+                    <h3>Front-End Web Developer – DPMD Gianyar</h3>
+                    <div class="timeline-company">Internship Trainee | DPMD Gianyar (Dinas Pemberdayaan Masyarakat dan Desa)</div>
+                    <p class="timeline-description">
+                        During my 6-month internship at DPMD Gianyar, I bridged the gap between academic theory and public sector practice. 
+                        I was involved in coordinating community-based projects and assisting in the evaluation of village-level empowerment programs. 
+                        This role sharpened my skills in professional communication, data management, front-end development and understanding the complexity of regional governance in Bali.
+                    </p>
+                </div>
+                <div class="timeline-empty"></div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-empty"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 - Present</div>
+                    <h3>Student Data Analysis & Recapitulation</h3>
+                    <div class="timeline-company">Freelance & WFH</div>
+                    <p class="timeline-description">
+                        Responsible for managing and systematizing comprehensive databases for students and faculty members. 
+                        Streamlined the data collection process and performed periodic recapitulations to ensure data integrity and accessibility for academic reporting.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2025 - Present</div>
+                    <h3>TikTok Affiliate</h3>
+                    <div class="timeline-company">Affiliate Marketing</div>
+                    <p class="timeline-description">
+                        Dedicated to bridging the gap between brands and consumers by providing honest, high-quality product reviews. 
+                        I specialize in creating 'User-Generated Content' (UGC) that feels organic and trustworthy. 
+                        By maintaining high transparency in my reviews, I have successfully built an engaged community and consistently achieved sales targets through the TikTok Shop ecosystem.
+                    </p>
+                </div>
+                <div class="timeline-empty"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <div class="section-number">05 CONNECT.NOW</div>
+            <h2 class="section-title">CONTACT</h2>
+            <p class="section-description">
+                Let's collaborate on your next innovative project. Available for freelance work and consulting.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-card reveal">
+                    <div class="contact-icon">📧</div>
+                    <h4>EMAIL</h4>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b9dbcbd8d4d8cacdcbd8d8d7ddd0d2d8f9ded4d8d0d597dad6d4">[email&#160;protected]</a></p>
+                </div>
+                <div class="contact-card reveal">
+                    <div class="contact-icon">📱</div>
+                    <h4>PHONE</h4>
+                    <p>+62 852 8079 6347</p>
+                </div>
+                <div class="contact-card reveal">
+                    <div class="contact-icon">📍</div>
+                    <h4>LOCATION</h4>
+                    <p>Denpasar, Bali</p>
+                </div>
+                <div class="contact-card reveal">
+                    <div class="contact-icon">💼</div>
+                    <h4>STATUS</h4>
+                    <p>Undergraduate Student at INSTIKI University</p>
+                </div>
+                <div class="contact-card reveal cv-download-card">
+                    <div class="contact-icon">📥</div>
+                    <h4>DOWNLOAD CV</h4>
+                    <a href="files/CV - Bramastra (Eng).pdf" download="CV - Bramastra (Eng).pdf" class="btn btn-cv-small">
+                        GET MY CV
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">FULL NAME</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">SUBJECT</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>ANDIKA BRAMASTRA</h3>
+                <p>
+                    Building the future of technology, one line of code at a time. Specializing in enterprise-scale 
+                    applications and innovative digital solutions.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/Brmstrandka" target="_blank" class="social-link" aria-label="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/in/andika-bramastra-86005b277?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLow3l6r%2BTh6a0Hy02chfDw%3D%3D" target="_blank" class="social-link" aria-label="LinkedIn">LI</a>
+                    <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">TW</a>
+                    <a href="https://stackoverflow.com/users/32290067/bram" target="_blank" class="social-link" aria-label="Stack Overflow">ST</a>
+                    <a href="/cdn-cgi/l/email-protection#284a5a4945495b5c5a4949464c414349684f45494144064b4745" class="social-link" aria-label="Email">EM</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">IoT Solutions</a></li>
+                    <li><a href="#">Data Analysis</a></li>
+                    <li><a href="#">Technical Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li><a href="/cdn-cgi/l/email-protection#315343505c5042454350505f55585a5071565c50585d1f525e5c">Email Me</a></li>
+                    <li><a href="tel:+6285280796347">Call Me</a></li>
+                    <li><a href="#contact">Contact Form</a></li>
+                    <li><a href="#">Schedule Call</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ANDIKA BRAMASTRA. ALL RIGHTS RESERVED. DESIGNED WITH PASSION FOR TECHNOLOGY.</p>
+        </div>
+    </footer>
+
+    <!-- Three.js Library (async loading) -->
+    <script async src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+    
+    <!-- Main JavaScript (defer loading) -->
+    <script defer src="script.js"></script>
+</body>
+</html>
